@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"> </head><body>cheat-sheet VIM
-  
+<html>
 
-  
+  <head>
+
+
+    <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>cheat-sheet Vim</title>
+  </head>
+
+
+  <body>
+<p> <a href="http://www.tuteurs.ens.fr/unix/editeurs/vim.html">source<a/></p>
+<p><a href="http://www.vim-fr.org/index.php/Commandes_de_bases">source vim<a/></p>
       <h1>Les bases de VIM</h1> <br>
        <p>Vim est un éditeur de texte pour le terminal sous GNU/Linux.<br>
        Il a une stabilité exemplaire et ne cesse d'être amélioré.<br>
@@ -11,39 +20,56 @@
 
        (coloration syntaxique de 200 langages, complétion automatique, comparaison de fichiers, recherche évoluée, …)<br>
         et est extensible par des scripts.</p><br>
-
+<img src="http://bsccongress.com/im19/vim-logo-clip-art.png"/>
 
        <h1>1.les commandes pour se déplacer sur le terminal</h1><br>
-       <p>Ces commandes permettent un mouvement libre.<br>
-       *k pour naviguer vers le haut<br>
-       *j pour naviguer vers le bas<br>
-       *h pour naviguer vers gauche<br>
-       *l pour naviguer vers la droite</p><p><br>
+       <p>Ces commandes permettent un mouvement libre.</p><br>
+       <p>*' x 		déplacement 	va à la marque x (par ligne)<br>
+       *` x 		déplacement 	va à la marque x (par caractère)<br>
+       *k       pour naviguer vers le haut<br>
+       *j       pour naviguer vers le bas<br>
+       *h       pour naviguer vers gauche<br>
+       *l       pour naviguer vers la droite</p><br>
 
-       </p><h1> 2.Les commandes d'insertions</h1><br>
-       <p>Ce sont les commandes qui permettent de générer une action.</p><p><br>
-       <strong>mode insertion</strong><br>
+       <h1> 2.Les commandes d'insertions</h1><br>
+       <p>Ce sont les commandes qui permettent de générer une action.</p><br>
+       <strong>mode insert</strong><br>
 
-       i=insert  passe en mode insertion<br>
-       a=append  passe en mode insertion en faisant avancer le curseur<br>
-       o=open    passe en mode insertion en créant une nouvelle ligne sous le curseur<br>
-       O=open    passe en mode insertion en créant une nouvelle ligne au dessus du curseur<br>
-       R=replace passe en mode remplacement<br>
+       <p>i=(insert)  passe en mode insertion<br>
+       a=(append)  passe en mode insertion en faisant avancer le curseur<br>
+       o=(open)    passe en mode insertion en créant une nouvelle ligne sous le curseur<br>
+       O=(open)    passe en mode insertion en créant une nouvelle ligne au dessus du curseur<br>
+       R=(replace) passe en mode remplacement<br></p>
        <strong>mode visuel</strong><br>
-
-       v=visual  passe en mode visuel<br>
-       V=        passe en mode visuel par ligne<br>
-       ctrl-V=   passe en mode visuel par bloc<br>
+<p>Le mode visuel, ou plutôt les modes visuels, permettent de sélectionner du texte. <br>
+Une commande de modification faite en mode visuel va agir sur la zone sélectionnée au lieu d'un seul caractère, ou d'attendre un déplacement.<br>
+ Pour les déplacements, le mode visuel fonctionne comme le mode commande. </p><br>
+       <p>v=(visual)  passe en mode visuel<br>
+       V=(visual)        passe en mode visuel par ligne<br>
+       ctrl-V=   passe en mode visuel par bloc</p><br>
 <strong>mode action</strong><br>
-d=delete     <br>qui permet de supprimer
-c=change
-y=yank
+<p>d=(delete)  qui permet de supprimer<br>
+c=(change)  qui permet de changer<br>
+gu=		     action 	passe en minuscules<br>
+gU= 		   action 	passe en majuscules<br>
+y=(yank)  	action 	copie dans un registre</p><br>
+
+ <h1>3.les commandes pour charger, sauver et quitter</h1>
+
+<p>:write 	:w =	sauve le fichier en cours d'édition<br>
+:write fichier 	:w =	écrit le texte dans le fichier indiqué<br>
+:saveas fichier 	:sav =	sauve le fichier sous un nouveau nom<br>
+:edit fichier 	:ed =	édite un nouveau fichier<br>
+:quit 	:q =	quitte<br>
+:exit 	:x =	sauve si nécessaire et quitte<br>
+:wq 		= sauve et quitter</p><b>
+
+
 
        </p><ol>
 
        </ol>
 
       <p>
-  
 
 </p></body></html>
