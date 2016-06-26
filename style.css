@@ -1,10 +1,19 @@
 body
+/* esthétique de page avec un degradé & typo en blanc*/
 {
-background-color :#4A9A8A;
+color:white;
+background-color:black;
+
+background-image:radial-gradient(white, black);
+
 text-align:center;
 
  }
-
+ p {
+  border-width:2px;
+  border-style:groove;
+  border-color:white;
+  }
 
 
 
