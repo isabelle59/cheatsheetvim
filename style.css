@@ -1,20 +1,21 @@
 body
 {
+background-color :#4A9A8A;
+text-align:center;
 
-@media (min-width:480px) and (max-width:780px)
-{
-
-  }
-  @media (min-width:781px) and (max width:979px)/*pour l'ensemble du contenu de page, donc toute la page*/
-{
+ }
 
 
-  }
-  {
-    background-color:#B6E3F2; /* Le fond de la page sera bleu*/
-     color:black; /* Le texte de la page sera noir */
-}
+
+
+
+/*pour l'ensemble du contenu de page, donc toute la page*/
+
+
 h1
-{color:black;
-font-family: Arial,impact, comic;
+{
+  color:black;
+  font-family: Arial,impact, comic;
+  text-decoration :underline;
+
 }
